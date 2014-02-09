@@ -1,12 +1,12 @@
 #!/bin/bash
 
+# This script will download SRA files for a specified study accession number
+# SRA files will be converted to FASTQ using fastq-dump
+
 # Arguments
-DATA_DIR=$1
-STUDY_ACCESSTION=$2
-THREADS=$3
-#DATA_DIR='/mnt/data/work/pollardlab/snayfach/metagenomes/Crohns'
-#STUDY_ACCESSTION='SRP002423'
-#THREADS=8
+DATA_DIR=$1 # ex: '/mnt/data/work/pollardlab/snayfach/metagenomes/Crohns'
+STUDY_ACCESSTION=$2 # ex: 'SRP002423'
+THREADS=$3 # Number of threads for downloading sra files; ex: 8
 
 # 0. Create data directories
 mkdir -p  ${DATA_DIR} ${DATA_DIR}/sra ${DATA_DIR}/fastq ${DATA_DIR}/log ${DATA_DIR}/src
