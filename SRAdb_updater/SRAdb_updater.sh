@@ -3,7 +3,10 @@
 # This script with download and load SRAdb into MySQL
 # Script should be run 2x each month to ensure up-to-date data
 # To see the current cron jobs enter: crontab -l
-# http://www.biomedcentral.com/1471-2105/14/19
+# Example cron job for weekly update: 0 0 * * 7 /mnt/data/work/pollardlab/snayfach/databases/SRAdb/src/SRAdb_updater.sh
+#
+# Reference: http://www.biomedcentral.com/1471-2105/14/19
+
 
 
 # Download current dump of database
